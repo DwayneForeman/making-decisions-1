@@ -94,7 +94,7 @@ if (temperature >= 80 && rain) {
 
 //CODE HERE
 
-for (let i = 0; i > 10; i++){
+for (let i = 0; i < 10; i++){
   console.log("hello");
 }
 
@@ -117,6 +117,14 @@ for (let i = 0; i > 10; i++){
 
 //CODE HERE
 
+for(let i = 1; i < 11; i++){
+  console.log(i);
+}
+
+
+
+
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -124,6 +132,10 @@ for (let i = 0; i > 10; i++){
 */
 
 //CODE HERE
+
+for(let i= 10; i >= 0; i--){
+  console.log(i);
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -137,6 +149,11 @@ let passingScore = 7;
 
 //CODE HERE
 
+while(score < 7){
+  score += 1
+  console.log('Your score is not enough')
+};
+
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -148,10 +165,22 @@ let passingScore = 7;
 
 //CODE HERE
 
+var changedMyMind = true;
+
+if(changedMyMind === true){
+  changedMyMind = false;
+  console.log('Changed my mind is now false')
+}else if(changedMyMind === false){
+  changedMyMind = true;
+  console.log('Changed my mind is now true')
+};
+
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+
+changedMyMind = !changedMyMind
 
 ////////// ADVANCED PROBLEMS //////////
 
@@ -161,3 +190,12 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+
+wwhile (z > 0) {
+  for (let i = z; i > 0; i--) {
+    console.log(i)
+  }
+  z--
+}
+//5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
